@@ -15,10 +15,10 @@
         
         <nav class="navbar">
             <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skill</a>
+            <a href="#project" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>  
     <section class="home">
@@ -28,25 +28,31 @@
             <h3>E eu sou <span id="text-who-iam"></span></h3>
             <p>Eu sou desenvolvedor com uma ampla experiencia nos ultimos 3 anos.</p>
                 <br>Atualmente sou fullstack em Delphi, porem tenho solidos conhecimentos em linguagens web
-                    como HTML, CSS, JavaScript, Bootstrap, Angular, React, NodeJS, MongoDB, PostgreSQL, Git, 
-                    GitHub, GitLab, Docker, Vercel, entre outras.</p>
+                    como HTML, CSS, JavaScript e TypeScript. Alem disso, para o backend uso o framework do
+                    NestJs, TypeORM para a comunicacao com o banco de dados, Swagger para poder documentar 
+                    toda a API e autenticacao JWT. Ja para o frontend utilizo o Angular, React, Bootstrap.
+                    Para o versionamento de codigo, tenho um bom conhecimento em Git e gosto bastante de
+                    utilizar o workflow do GitFlow e a minha ferramenta favorita para isso e para o versionamento
+                    é o GitKraken, porem tambem tenho conhecimento em GitHub e GitLab tambem. Falando um pouco sobre
+                    banco de dados, tenho conhecimento basico em MongoDB, porem tenho solidos conhecimentos
+                    no PostgreSQL, MySQL e Firebird.</p>
             <div class="home-btn-social">
-                <a href="#" style="--i:6"><i class='bx bxl-linkedin' style='color:#ffffff'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-instagram' style='color:#ffffff'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-github' style='color:#ffffff'></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-twitter' style='color:#ffffff'></i></a>
+                <a href="https://www.linkedin.com/in/gustavoamericorosa/" target="_blank" style="--i:6"><i class='bx bxl-linkedin' style='color:#ffffff'></i></a>
+                <a href="https://www.instagram.com/gustavoar_/" target="_blank" style="--i:7"><i class='bx bxl-instagram' style='color:#ffffff'></i></a>
+                <a href="https://github.com/Americo509" target="_blank" style="--i:8"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+                <a href="https://twitter.com/_gustavoar" target="_blank" style="--i:9"><i class='bx bxl-twitter' style='color:#ffffff'></i></a>
             </div>
             <div>
-                <a href="#" class="btn-box">Entre em contato comigo!</a>
+                <a href="#contact" class="btn-box">Entre em contato comigo!</a>
             </div>
         </div>
     </section>
-    <section class="about" id="about">
+    <div class="about" id="about">
         <div class="about-img">
             <img src="assets/teste.png" alt="Falando um pouco sobre o Gustavo Americo Rosa">  
         </div>
         <div class="about-text">
-            <h2>Um Pouco<span> sobre Gustavo</span></h2>
+            <h2>Um Pouco<span> sobre o Gustavo</span></h2>
             <h4>Desenvolvedor FullStack</h4>
             <p>Trabalho na empresa Nevra Software aproximadamente ha 3 anos, como desenvolvedor FullStack na linguaguem de programacao <strong>Delphi.</strong>
                Utilizamos o <strong>GitKraken</strong> para o versionamento de codigo. Ja para o banco de dados, utilizamos o <strong>firebird</strong>. 
@@ -54,9 +60,18 @@
                desenvolvimento do sistema, contribuir com projetos em grupo, implementacao e manutencao de funcionalidades do software,
                alem de correcoes de bugs.
             </p>
-            <a href="#" class="btn-box">Um pouco mais sobre mim...</a>
+            <p>Agora falando um pouco sobre a minha formacao, sou formado em <strong>Engenharia de Software</strong> pela Unicesumar, onde tive a oportunidade
+               de aprender sobre as melhores praticas de desenvolvimento de software, metodologias ageis, padroes de projeto, arquitetura de software e muito mais.
+               Alem disso, tive a oportunidade de participar de projetos academicos, onde pude aprender sobre a importancia do trabalho em grupo, alem de aprender
+               sobre a importancia da comunicacao e a importancia de saber resolver problemas.
+            </p>
+            <p>Ja na minha vida pessoal, sou uma pessoa que gosta de aprender coisas novas, gosto de jogar video game, gosto de assistir filmes e series, 
+               gosto de ouvir musica e gosto de praticar esportes, principalmente jogar futebol e sou corinthiano roxo, entao pode ter certeza, nunca vou
+               desistir facil de um desafio!
+            </p>
+            <a href="#skills" class="btn-box">Um pouco mais sobre mim...</a>
         </div>  
-    </section>
+    </div>
 
     <!-- A sessao abaixo esta comentada, pois ainda nao tenho servicos a oferecer. -->
     <!-- <section>
@@ -95,7 +110,7 @@
     
     <h1 class="sub-title">Minhas <span>Habilidades</span></h1>
     
-    <section>
+    <!-- <section>
         <div class="container1" id="skills">
             <h1 class="heading1">Habilidades Tecnicas</h1>
             <div class="technical-bars">
@@ -144,9 +159,6 @@
                         <span></span>
                     </div>
                 </div>
-
-                
-
             </div>
         </div>
 
@@ -201,31 +213,41 @@
                 
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <h2 class="ultimos-projetos">Ultimos <span>Projetos</span></h2>
     <section>
-        <div id="protfolio" id="project">
-            <div class="main-text" id="project">
-                <h2>Ultimos <span>Projetos</span></h2>
-
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="assets/cookshow.png" alt="Projeto cookshow realizado na escola de TI da unicesumar">
-                        <div class="layer">
-                            <h5>CookShow</h5>
-                            <p>
-                                Uma aplicação de receitas elegante e eficiente, desenvolvida em React, Tailwind, Node, Nest, com documentação Swagger e gerenciamento 
-                                de banco de dados através do TypeORM. Ao pesquisar um ingrediente, exibe instantaneamente todas as receitas que o incluem. 
-                                Para deploy, utiliza Vercel, com gestão de tarefas no Redmine e controle de versão via GitLab e GitKraken. Uma fusão perfeita entre 
-                                tecnologia e culinária, proporcionando uma busca por receitas simples, mas irresistível.
-                                <a href="#"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
-                            </p>
-                        </div>
+        <div class="portfolio" id="project">
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="assets/cookshow.png" alt="Projeto cookshow realizado na escola de TI da unicesumar">
+                    <div class="layer">
+                        <h5>CookShow</h5>
+                        <p>
+                            Uma aplicação de receitas elegante e eficiente, desenvolvida em React, Tailwind, Node, Nest, com documentação Swagger e gerenciamento 
+                            de banco de dados através do TypeORM. Ao pesquisar um ingrediente, exibe instantaneamente todas as receitas que o incluem. 
+                            Para deploy, utiliza Vercel, com gestão de tarefas no Redmine e controle de versão via GitLab e GitKraken. Uma fusão perfeita entre 
+                            tecnologia e culinária, proporcionando uma busca por receitas simples, mas irresistíveis!
+                            <a href="https://github.com/Americo509/cookshow" target="_blank"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/cookshow.png" alt="Projeto cookshow realizado na escola de TI da unicesumar">
+                    <div class="layer">
+                        <h5>CookShow</h5>
+                        <p>
+                            Uma aplicação de receitas elegante e eficiente, desenvolvida em React, Tailwind, Node, Nest, com documentação Swagger e gerenciamento 
+                            de banco de dados através do TypeORM. Ao pesquisar um ingrediente, exibe instantaneamente todas as receitas que o incluem. 
+                            Para deploy, utiliza Vercel, com gestão de tarefas no Redmine e controle de versão via GitLab e GitKraken. Uma fusão perfeita entre 
+                            tecnologia e culinária, proporcionando uma busca por receitas simples, mas irresistíveis!
+                            <a href="https://github.com/Americo509/cookshow" target="_blank"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <section class="contact" id="contact">
         <div class="contact-text">
@@ -233,7 +255,7 @@
             <h4>Vamos trabalhar juntos!</h4>
             <p>
                 Estou disponível para conversar sobre oportunidades, responder a dúvidas, trocar informações sobre o universo do desenvolvimento web ou trocar uma idea sobre futebol! 
-                Você pode entrar em contato comigo pelas redes sociais. Estou ansioso para ouvir suas ideias e explorar possíveis projetos.  Sinta-se à vontade para me contatar a 
+                Você pode entrar em contato comigo pelas redes sociais. Estou ansioso para ouvir suas ideias e explorar possíveis projetos. Sinta-se à vontade para entrar em contato a 
                 qualquer momento.
             </p>
             <div class="contact-list">
@@ -241,15 +263,15 @@
                 <li><i class='bx bxl-whatsapp-square' style='color:#ffffff' ></i>+55 (44) 99741-8222</li>
             </div>
             <div class="contact-icons">
-                <a href=""><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></a>
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-twitter' style='color:#ffffff' ></i>
+                <a href="https://www.instagram.com/gustavoar_/" target="_blank"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                <a href="https://www.linkedin.com/in/gustavoamericorosa/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Americo509" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/_gustavoar" target="_blank"><i class='bx bxl-twitter' style='color:#ffffff' ></i>
             </div>
         </div>
 
         <div class="contact-form">
-            <form action="">
+            <form action="enviar">
                 <input type="" placeholder="Escreva seu nome" required>
                 <input type="email" placeholder="Escreva seu Email" required>
 
@@ -263,7 +285,7 @@
     <div class="last-text">
         <p>Desenvolvido por Gustavo Americo Rosa</p>
     </div>
-    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    <a class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
     <script>
         var typed = new Typed('#text-who-iam', {
