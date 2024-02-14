@@ -316,188 +316,194 @@ section {
     font-size: 23px;
 }
 
-.technical-bars .bar {
-    margin-top: 40px 0;
-}
-
-.technical-bars .bar:first-child {
-    margin-top: 0;
-}
-
-.technical-bars .bar:last-child {
-    margin-bottom: 0;
-}
-
-.technical-bars .bar .info {
-    margin-bottom: 5px;
-}
-
-.technical-bars .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.technical-bars .bar .progress-skill {
+.progress{
+    height: 7px;
+    background-color: #777;
     position: relative;
     border-radius: 100px;
-    width: 100%;
-    height: 5px;
-    background: red;
-    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
+    margin-bottom: 15px;
 }
 
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
+.progress-bar-html{
+   position: relative;
+   height: 100%;
+   max-width: 60%;
+   background-color: #0ef;
+   border-radius: 100px;
+   animation: progress-animation 2s linear forwards;
 }
 
-.technical-bars .bar .progress-skill span {
+.progress-bar-css{
+    position: absolute;
     height: 100%;
+    max-width: 60%;
+    width: 70%;
     background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-js{
     position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
 
-.progress-line.html span {
-    width: 90%;
-}
-.progress-line.css span {
-    width: 90%;
-}
-.progress-line.JavaScript span {
-    width: 90%;
-}
-.progress-line.TypeScript span {
-    width: 90%;
-}
-.progress-line.Angular span {
-    width: 90%;
-}
-.progress-line.React span {
-    width: 90%;
-}
-.progress-line.NestJs span {
-    width: 90%;
-}
-.progress-line.Jira span {
-    width: 90%;
-}
-.progress-line.Git span {
-    width: 90%;
-}
-.progress-line.FireBird span {
-    width: 90%;
-}
-.progress-line.PostgreSQL span {
-    width: 90%;
-}
-.progress-line.MongoDB span {
-    width: 90%;
-}
-.progress-line.Delphi span {
-    width: 90%;
-}
-.progress-line.Swagger span {
-    width: 90%;
-}
-.progress-line.Docker span {
-    width: 90%;
-}
-
-.progress-line span::after {
+ .progress-bar-ts{
     position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
 
-.progress-line.html::after {
-    content: '90%';
-}
-.progress-line.css::after {
-    content: '90%';
-}
-
-.progress-line.JavaScript::after {
-    content: '90%';
-}
-
-.progress-line.TypeScript::after {
-    content: '90%';
-}
-
-.progress-line.Angular::after {
-    content: '90%';
-}
-
-.progress-line.React::after {
-    content: '90%';
-}
-
-.progress-line.NestJs::after {
-    content: '90%';
-}   
-
-.progress-line.Jira::after {
-    content: '90%';
-}
-
-.progress-line.Git::after {
-    content: '90%';
-}
-
-.progress-line.FireBird::after {
-    content: '90%';
-}
-
-.progress-line.PostgreSQL::after {
-    content: '90%';
-}
-
-.progress-line.MongoDB::after {
-    content: '90%';
-}
-
-.progress-line.Delphi::after {
-    content: '90%';
-}
-
-.progress-line.Swagger::after {
-    content: '90%';
-}
-
-.progress-line.Docker::after {
-    content: '90%';
-}
-
-.progress-line span::before {
-    content: "";
+ .progress-bar-react{
     position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0;
-    animation: showTrext 0.5s 1.5s linear forwards;
-    opacity: 0;    
-}
+    height: 100%;
+    max-width: 50%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-angular{
+    position: absolute;
+    height: 100%;
+    max-width: 50%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-node{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-nest{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-git{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-github{
+    position: absolute;
+    height: 100%;
+    max-width: 85%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-postgre{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-mysql{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-mongo{
+    position: absolute;
+    height: 100%;
+    max-width: 30%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-swagger{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-docker{
+    position: absolute;
+    height: 100%;
+    max-width: 40%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-agil{
+    position: absolute;
+    height: 100%;
+    max-width: 90%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-typeORM{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-ddd{
+    position: absolute;
+    height: 100%;
+    max-width: 70%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-poo{
+    position: absolute;
+    height: 100%;
+    max-width: 80%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
+
+ .progress-bar-gitflow{
+    position: absolute;
+    height: 100%;
+    max-width: 85%;
+    background-color: #0ef;
+    border-radius: 100px;
+    animation: progress-animation 2s linear forwards;
+ }
 
 .radial-bars {
     width: 100%;
@@ -547,6 +553,11 @@ section {
 .path-3 {animation: animate-path3 1s 1s linear forwards}
 .path-4 {animation: animate-path4 1s 1s linear forwards}
 .path-5 {animation: animate-path5 1s 1s linear forwards}
+.path-6 {animation: animate-path6 1s 1s linear forwards}
+.path-7 {animation: animate-path7 1s 1s linear forwards}
+.path-8 {animation: animate-path8 1s 1s linear forwards}
+.path-9 {animation: animate-path9 1s 1s linear forwards}
+.path-10 {animation: animate-path10 1s 1s linear forwards}
 
 .radial-bars .percentage {
     position: absolute;
@@ -579,7 +590,7 @@ section {
 .ultimos-projetos {
     text-align: center;
     font-size: 60px;
-    padding-top: 50px;
+    padding-top: 600px;
     padding-bottom: 5px;
 }
 
@@ -608,7 +619,6 @@ section {
     transition: backgroud 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
                 1px 1px 40px #0053b8f7;
-    transform: translateY(-10px);
 }
 
 .button-git {
@@ -853,7 +863,7 @@ section {
 }
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 120;
     }
 }
 @keyframes animate-path3 {
@@ -872,6 +882,36 @@ section {
     }
 }
 
+@keyframes animate-path6 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path7 {
+    100% {
+        stroke-dashoffset: 120;
+    }
+}
+
+@keyframes animate-path8 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path9 {
+    100% {
+        stroke-dashoffset: 145;
+    }
+}
+
+@keyframes animate-path10 {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
 @keyframes go-back {
     from {
       transform: translateX(100px);
@@ -879,4 +919,15 @@ section {
     to {
       transform: translateX(0);
     }
+}
+
+@keyframes progress-animation{
+    0% { 
+        width: 0%; 
+    }
+    
+    100% { 
+        width: 100%
+    }
+    
 }
