@@ -939,11 +939,13 @@ section {
         width: 100%;
     }
     body .home {
+        width: 100%;
         background: #001425;
         margin-top: 50px;
         height: auto;
     }
     .home-content {
+        width: 100%;
         align-items: center;
         text-align: start;
     }
